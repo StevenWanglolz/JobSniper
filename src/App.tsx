@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import JobList from "./pages/JobList";
 import JobForm from "./pages/JobForm";
+import JobDetails from "./pages/JobDetails";
 import Settings from "./pages/Settings";
 
 const theme = createTheme({
@@ -35,6 +36,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/jobs" element={<JobList />} />
               <Route path="/jobs/new" element={<JobForm />} />
+              <Route path="/jobs/:id" element={<JobDetails />} />
               <Route path="/settings" element={<Settings />} />
             </Routes>
           </Box>
